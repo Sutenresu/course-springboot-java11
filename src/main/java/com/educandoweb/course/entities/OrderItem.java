@@ -59,6 +59,10 @@ public class OrderItem {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	//get is due to the Java EE specification
+	public Double getSubTotal() {
+		return price * quantity;
+	}
 
 	@Override
 	public int hashCode() {
